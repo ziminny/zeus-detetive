@@ -1,0 +1,265 @@
+.hide {
+  display: flex;
+}
+main {
+    
+    width: 100%;
+    margin-top: 100px;
+  
+
+  section.cards {
+    .row2 {
+      display: none;
+    }
+      display: flex;
+      flex-direction: column;
+      max-width: 80%;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 25px;
+
+      
+      h2 {
+        font-weight: 100;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+      }
+      .cards-d {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        .row {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid #ccc;
+          max-width: 300px;
+          margin-bottom: 50px;
+ 
+         
+            h3 {
+              font-weight: 300;
+              font-size: 21px;
+              height: 80px;
+              padding: 0 30px;
+              
+             
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+            }
+            .image {
+              height: 150px;
+              
+              background-size: cover; 
+            }
+            .body {
+              font-size: 14px;
+              font-weight: 200;
+              padding: 20px 10px;
+              text-align: justify;
+              line-height: 25px;
+              height: 300px;
+            }
+            .footer {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 60px;
+              border-top: 1px solid #cccccc;
+              background-color: rgba($color: #127a5f, $alpha: 0.1);
+                a {
+                  color: #4CAF50;
+                  font-weight: 300;
+                  font-size: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  transition: color 0.2s;
+
+                  img {
+                    width: 28px;
+                    height: 28px;
+                    margin-right: 10px;
+                  }
+                  &:hover {
+                    color: darken($color: #4CAF50, $amount: 15);
+                  }
+                }
+            }
+
+        }
+      }
+  }
+
+}
+
+.image1 {
+  background: url("../../public/assets/flagrante.jpg") no-repeat center;
+}
+.image2 {
+  background: url("../../public/assets/fraude_empresarial.jpg") no-repeat center;
+}
+.image3 {
+  background: url("../../public/assets/problemas_familiares.jpg") no-repeat center;
+}
+.image4 {
+  background: url("../../public/assets/desaparecido.jpg") no-repeat center;
+}
+
+@media screen and (max-width:1514px) and (min-width:1140px)  {
+    .row2 {
+      display: flex !important;
+      flex: 1;
+      border: 1px solid #ccc;
+      margin-left: 10px;
+      height: 592px;
+    }
+    .hide {
+      display: none !important;
+    }
+}
+
+@media screen and (max-width:1282px) {
+  .row2 {
+    .section-quem-sou {
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+@media  screen and (max-width:813px) {
+  section.quem-sou-m  {
+    max-width: 400px !important;
+  }
+  section.cards {
+
+    h2 {
+      text-align: justify !important;
+     font-size: 20px !important;
+     max-width: 400px !important;
+    }
+    .cards-d {
+      justify-content: center !important;
+
+      .row {
+        max-width: 400px !important;
+
+        .image {
+          height: 200px !important;
+        }
+        
+        .body {
+          height: auto !important;
+        }
+      }
+      
+    }
+  }
+}
+
+
+
+section.section-quem-sou {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+  
+  h2 {
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    &::after {
+      content: "";
+      background-color: #F2C14E;
+      display: block;
+      width: 150px;
+      height: 2px;
+      margin-top: 4px;
+    }
+
+  }
+   .body {
+     display: flex;
+      p {
+        letter-spacing: 1.5px;
+        line-height: 24px;
+        text-align: justify;
+        font-weight: 100;
+        font-size: 18px;
+        width: 100%;
+        padding-right: 20px;
+        
+      }
+
+    }
+}
+
+
+section.quem-sou-m {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+
+  h2 {
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 20px;
+    &::after {
+      content: "";
+      background-color: #F2C14E;
+      display: block;
+      width: 150px;
+      height: 2px;
+      margin-top: 4px;
+    }
+  }
+
+  .body {
+    display: flex;
+     p {
+       letter-spacing: 1.5px;
+       line-height: 24px;
+       text-align: justify;
+       font-weight: 100;
+       font-size: 18px;
+       
+       padding-right: 20px;
+       width: 50%;
+       
+     }
+
+   }
+  .image {
+    background: url("../../public/assets/detetive.svg") no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width:1140px) {
+  section.quem-sou-m { 
+    .body {
+      flex-direction: column !important;
+
+      p {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-right: 0 !important;
+      }
+
+      .image {
+        width: 100%;
+      }
+    
+    }
+  }
+}
