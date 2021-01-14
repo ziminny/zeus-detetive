@@ -83,7 +83,7 @@ ul {
   width: 100%;
 }
 .container header {
-  background-image: url("../../public/assets/image_header.jpg");
+  background-image: url("../../public/assets/image_header.webp");
   filter: grayscale(100%);
   background-repeat: no-repeat;
   background-position: center;
@@ -245,11 +245,11 @@ main section.cards .cards-d .row .footer a:hover {
 }
 
 .image1 {
-  background: url("../../public/assets/flagrante.jpg") no-repeat center;
+  background: url("../../public/assets/flagrante.webp") no-repeat center;
 }
 
 .image2 {
-  background: url("../../public/assets/fraude_empresarial.jpg") no-repeat center;
+  background: url("../../public/assets/fraude_empresarial.webp") no-repeat center;
 }
 
 .image3 {
@@ -257,7 +257,7 @@ main section.cards .cards-d .row .footer a:hover {
 }
 
 .image4 {
-  background: url("../../public/assets/desaparecido.jpg") no-repeat center;
+  background: url("../../public/assets/desaparecido.webp") no-repeat center;
 }
 
 @media screen and (max-width: 1514px) and (min-width: 1140px) {
