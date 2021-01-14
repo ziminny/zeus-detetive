@@ -122,6 +122,20 @@ ul {
     margin-bottom: 40px;
   }
 }
+@media screen and (max-width: 425px) {
+  .header-infos {
+    padding: 0 5px;
+  }
+  .header-infos h1 {
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  .header-infos span {
+    font-size: 14px;
+    padding: 10px 2px;
+    width: 100%;
+  }
+}
 .hide {
   display: flex;
 }
@@ -436,6 +450,11 @@ footer p {
 
   section.contato {
     max-width: 400px;
+  }
+}
+@media screen and (max-width: 425px) {
+  footer {
+    padding: 30px;
   }
 }
 

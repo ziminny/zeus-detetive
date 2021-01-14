@@ -46,3 +46,9 @@ footer {
     max-width: 400px;
   }
 }
+
+@media screen and (max-width:425px) {
+  footer {
+    padding:30px;
+  }
+} 
